@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header_container b">
+      <div class="logo"><img src="/karatel.jpg" alt=""></a></div>
+      <div class="header_nemu">
+        <div class="menu_icon">
+          <span></span>
+        </div>
+        <nav class="menu_body">
+          <ul>
+            <li><a href="javascript:void(0)" id="girlyandy">гирлянды</a></li>
+            <li><a href="javascript:void(0)" id="snake">змейка</a></li>
+            <li><a>ссылка</a></li>
+            <li><a href="">ссылка</a></li>
+            <li><a href="">ссылка</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <iframe src="" frameborder="5px solid white" id="games" width="80%" height="800px" style="margin: 2.5vw 0vw 0vw 10vw"></iframe>
+  <script src="script.js">
+    let menuIcon = document.querySelector('.menu_icon');
+    let menuBody = document.querySelector('.menu_body');
+    menuIcon.addEventListener('click', openMenu)
+    function openMenu(){
+      menuBody.classList.toggle('active');
+      menuIcon.classList.toggle('active');
+    }
+  </script>
+ 
+
+
+ 
+</body>
+</html>
